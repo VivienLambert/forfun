@@ -89,6 +89,7 @@ void	get_map(t_smlx *a, char *av)
 			!(a->map = (int**)malloc(sizeof(int*) * 8)))
 		proper_exit(a, 0, -1);
 	a->map[0] = NULL;
+	a->len = 0;
 	while ((ret = get_next_line(fd, &(a->tab))) && ret != -1)
 	{
 		a->split = ft_strsplit(a->tab, ' ');

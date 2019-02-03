@@ -15,8 +15,8 @@ FLAGS=	-Wall -Wextra -Werror
 SRC=	main.c bresenham.c bresenham_right.c bresenham_left.c readmap.c\
 		iso.c parallele.c setarg.c image.c keys.c
 OBJ=	$(SRC:.c=.o)
-LIB=	libft/libft.a -L /usr/local/lib/ -lmlx
-HEADER=	/System/Library/Frameworks/Tk.framework/Versions/Current/Headers/X11
+LIB=	libft/libft.a -L minilibx_macos -lmlx
+HEADER=	minilibx_macos/
 FRAM=	-framework OpenGL -framework Appkit
 
 all:		$(NAME)

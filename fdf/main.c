@@ -33,8 +33,8 @@ void	init_a(t_smlx *a)
 	ft_strcpy(a->help[11], "ROTATION Y AXIS   : Q or E");
 	ft_strcpy(a->help[12], "SHOW/HIDE HELP    : H");
 	a->help[13][0] = 0;
-	a->win_x = 2000;
-	a->win_y = 1080;
+	a->win_x = 800;
+	a->win_y = 600;
 	a->rot_y = 0.0;
 	a->rot_x = 0.0;
 	a->show_help = 1;
